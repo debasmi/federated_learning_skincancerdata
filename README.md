@@ -37,3 +37,29 @@ dermamnist.npz
 ```
 
 To view the dataset kindly download the NPZ Viewer Extension in VS CODE or run the viewer.py file in order to see the visualized images.
+
+## 📚 Citation
+
+If you use the **DermaMNIST** dataset or other MedMNIST datasets in your research or project, please cite both of the following MedMNIST papers:
+
+### 1. MedMNIST v2
+
+> Jiancheng Yang, Rui Shi, Donglai Wei, Zequan Liu, Lin Zhao, Bilian Ke, Hanspeter Pfister, Bingbing Ni.  
+> **"MedMNIST v2: A large-scale lightweight benchmark for 2D and 3D biomedical image classification."**  
+> *Scientific Data*, 2023.
+
+```bibtex
+@article{yang2023medmnist,
+  title={MedMNIST v2: A large-scale lightweight benchmark for 2D and 3D biomedical image classification},
+  author={Yang, Jiancheng and Shi, Rui and Wei, Donglai and Liu, Zequan and Zhao, Lin and Ke, Bilian and Pfister, Hanspeter and Ni, Bingbing},
+  journal={Scientific Data},
+  year={2023}
+}
+
+@inproceedings{yang2021medmnist,
+  title={MedMNIST Classification Decathlon: A Lightweight AutoML Benchmark for Medical Image Analysis},
+  author={Yang, Jiancheng and Shi, Rui and Ni, Bingbing},
+  booktitle={IEEE 18th International Symposium on Biomedical Imaging (ISBI)},
+  year={2021}
+}
+```
