@@ -1,4 +1,4 @@
-OLD CODE vs NEW CODE - SIMPLE COMPARISON
+cnnfull(OLD CODE) vs cnn_epochopt(NEW CODE) - SIMPLE COMPARISON
 =========================================
 
 Old code = fixed 15 epochs, cosine learning-rate schedule
@@ -17,35 +17,18 @@ New code = early stopping (up to 60 epochs), plateau learning-rate schedule
    Old: Slows down a little every round, on a fixed plan
    New: Stays the same, then halves only when progress stalls
 
-4. Which version is kept
-   Old: The best round (by validation AUC)
-   New: The best round (same)
-
-5. Wasted time
+4. Wasted time
    Old: Can waste time on useless rounds
    New: Saves time by quitting when it is stuck
 
-6. Risk of stopping too soon
+5. Risk of stopping too soon
    Old: None, because it always runs the full 15
    New: Small risk, since scores are noisy and more rounds might have
         found something better
 
-7. Extra info reported
+6. Extra info reported
    Old: Accuracy, F1, AUC, time, model size
-   New: All of that, plus which round was best, how many rounds ran,
+   New: Accuracy, F1, AUC, time, model size, which round was best, how many rounds ran,
         and the learning speed
 
-8. Models used
-   Old: UNet and ResNet18
-   New: Same
 
-9. Data handling
-   Old: Same
-   New: Same
-
-
-IN ONE SENTENCE
----------------
-The old code is a runner told to run exactly 15 laps. The new code is a
-runner who stops when they stop getting faster, then goes back to their
-best lap.
